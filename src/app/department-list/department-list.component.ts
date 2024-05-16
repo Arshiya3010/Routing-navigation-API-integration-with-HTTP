@@ -36,7 +36,7 @@ public postMethod(){
     body:'bar',
     userId:1,
   };
-  this.http.post('https://jsonplaceholder.typicode.com/posts/1',body,{headers:header}).subscribe(
+  this.http.post('https://jsonplaceholder.typicode.com/posts',body,{headers:header}).subscribe(
     (data)=>{
       console.log(data);
       this.postJsonValue=data;
